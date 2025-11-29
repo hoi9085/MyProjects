@@ -1,0 +1,14 @@
+BVVN
+1,1
+OVBO
+1,1
+JVOV
+2,1
+NVOJ
+2,0
+VVOM
+3,0
+VVOG
+3,0
+VVOR
+4,0

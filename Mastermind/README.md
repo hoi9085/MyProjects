@@ -34,17 +34,15 @@ The codebreaker is controlled by a human player. The player inputs their guess m
 ### 2. Codemaker Strategies
 
 **Codemaker 0 Strategy**
-The codemaker selects a secret code at the start of the game. When evaluating a guess, it only counts how many colors are correctly placed (black pegs) and ignores correct colors in the wrong positions (white pegs). This is a partial evaluation, providing limited feedback to the codebreaker.
+The codemaker selects a secret code at the start of the game. When evaluating a guess, it only counts how many colors are correctly placed (white pegs) and ignores correct colors in the wrong positions (black pegs). This is a partial evaluation, providing limited feedback to the codebreaker.
 
 **Codemaker 1 Strategy**
-The codemaker generates a secret code randomly at the start. It uses the full evaluation function, returning both the number of correctly placed colors (black pegs) and the number of correct colors in wrong positions (white pegs), providing complete feedback to the codebreaker.
+The codemaker generates a secret code randomly at the start. It uses the full evaluation function, returning both the number of correctly placed colors (white pegs) and the number of correct colors in wrong positions (black pegs), providing complete feedback to the codebreaker.
 ***
 
 **Codemaker 2 Strategy**
 The codemaker adapts dynamically: it maintains a set of all possible codes and, after each guess, chooses a secret code that maximizes the number of remaining possible solutions. This makes the codebreaker’s task harder because the “target” adapts while staying consistent with prior feedback — in a sense, it can “cheat” within the rules.
 
-**Human Codemaker Strategy**
-The codemaker allows a human player to provide feedback manually. After each guess from the codebreaker, the human inputs the number of correctly placed colors (black pegs) and correct colors in wrong positions (white pegs). This enables interactive gameplay with full control over the secret code and feedback.
 
 ## ⚙️ Project Structure and Organization
 
