@@ -16,10 +16,10 @@ The project explores a range of Codebreaker strategies, from pure randomness to 
 ### 1. Codebreaker Strategies (CB)
 
 **Codebreaker 0 Strategy**
-The codebreaker generates a random guess at each turn. It does not use any feedback from previous guesses to improve future guesses. Each guess is completely independent, purely relying on randomness.
+The codebreaker generates a random guess at each turn. Each guess is completely independent, purely relying on randomness.
 
 **Codebreaker 1 Strategy**
-The codebreaker maintains a list of all possible combinations and randomly selects a guess from this list. After each guess, the chosen combination is removed from the pool to avoid repeating guesses. This strategy ensures no duplicate guesses but does not actively use feedback to narrow down possibilities.
+The codebreaker maintains a list of all possible combinations and randomly selects a guess from this list. After each guess, the chosen combination is removed from the pool to avoid repeating guesses.
 
 **Codebreaker 2 Strategy**
 The codebreaker starts with a random guess. From the second turn onward, it maintains a set of all possible solutions consistent with previous feedback. At each turn, it randomly selects a guess from this set and updates the possibilities based on the feedback, ensuring guesses progressively narrow down the solution space.
@@ -41,7 +41,7 @@ The codemaker generates a secret code randomly at the start. It uses the full ev
 ***
 
 **Codemaker 2 Strategy**
-The codemaker adapts dynamically: it maintains a set of all possible codes and, after each guess, chooses a secret code that maximizes the number of remaining possible solutions, making it harder for the codebreaker to converge quickly. Feedback is fully evaluated, giving both correctly placed and mispositioned colors.
+The codemaker adapts dynamically: it maintains a set of all possible codes and, after each guess, chooses a secret code that maximizes the number of remaining possible solutions. This makes the codebreaker’s task harder because the “target” adapts while staying consistent with prior feedback — in a sense, it can “cheat” within the rules.
 
 **Human Codemaker Strategy**
 The codemaker allows a human player to provide feedback manually. After each guess from the codebreaker, the human inputs the number of correctly placed colors (black pegs) and correct colors in wrong positions (white pegs). This enables interactive gameplay with full control over the secret code and feedback.
