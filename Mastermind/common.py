@@ -4,9 +4,8 @@ from itertools import product
 import copy 
 LENGTH = 4
 COLORS = ['R', 'V', 'B', 'J', 'N', 'O', 'M', 'G']
-# Notez que vos programmes doivent continuer à fonctionner si on change les valeurs par défaut ci-dessus
 
-#Question 1
+
 def evaluation(combinaison, combinaison_reference):
     bien_places, mal_places = 0, 0 # Initialisation des compteurs
     combinaison1, combinaison2 = [], [] # Initialisation des lisltes qui vont contenir des éléments des combinaisons
@@ -29,7 +28,7 @@ def evaluation(combinaison, combinaison_reference):
 l = ["".join(combination) for combination in product(COLORS, repeat=LENGTH)]
 
 
-#Question 5
+
 # Fonction pour déterminer les combinaisons possibles en fonction d'une évaluation donnée
 def donner_possibles(combinaison_testee, evaluation_associee):
     comb_possibles = set()  # Créer un ensemble pour stocker les combinaisons possibles
@@ -41,7 +40,6 @@ def donner_possibles(combinaison_testee, evaluation_associee):
     return comb_possibles  # Retourner l'ensemble des combinaisons possibles
 
 
-#Question 6
 # Fonction pour mettre à jour les combinaisons possibles en fonction d'une évaluation donnée
 def maj_possibles(combinaisons_possibles_encore, combinaison_testee, evaluation_associee):
     enlever = []  # Créer une liste pour stocker les combinaisons à enlever

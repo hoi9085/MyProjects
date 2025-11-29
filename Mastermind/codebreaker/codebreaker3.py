@@ -7,7 +7,7 @@ import random
 import play
 import codebreaker3
 import codemaker2
-import common  # N'utilisez pas la syntaxe "form random import XXX"
+import common 
 
 
 def init():

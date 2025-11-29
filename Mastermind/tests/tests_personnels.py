@@ -1,5 +1,4 @@
 #%%
-# Question 1
 import common
 
 # Combinaisons choisies
@@ -33,7 +32,7 @@ for i in range(len(c)):
 #           évaluation (RRRR, BRRJ) : (2, 0)
 
 #%%
-# Question 10
+
 import codemaker2
 import codemaker1
 import codebreaker2

@@ -2,7 +2,7 @@
 import sys
 import random
 import play
-import common  # N'utilisez pas la syntaxe "from common import XXX"
+import common 
 
 
 def init():

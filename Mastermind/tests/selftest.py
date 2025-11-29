@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-""" Autotests
-
-Ces auto-tests vous permettent de détecter un certain nombre d'erreurs (non-respect des spécifications notamment) élémentaires.
-Ils sont *volontairement* incomplets (apprendre à lire et respecter une spécification fait partie des points travaillés à travers le projet) mais vous évitent de partir sur une architecture incorrecte dès les premières questions.
-Notez bien que ce script s'arretera à la première erreur rencontrée.
-"""
 
 import sys
 import os

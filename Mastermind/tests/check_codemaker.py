@@ -1,4 +1,3 @@
-#Question 10
 import common
 from itertools import product
 
