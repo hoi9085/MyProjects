@@ -13,7 +13,7 @@ This project is a **school assignment** developed by a two-person team (binome).
 
 The project explores a range of Codebreaker strategies, from pure randomness to information-based algorithms.
 
-### 1. Codebreaker Strategies (CB)
+### 1. Codebreaker Strategies
 
 **Codebreaker 0 Strategy**
 The codebreaker generates a random guess at each turn. Each guess is completely independent, purely relying on randomness.
@@ -31,7 +31,7 @@ This codebreaker implements a minimax-like approach: it keeps track of all possi
 **Human Codebreaker Strategy**
 The codebreaker is controlled by a human player. The player inputs their guess manually at each turn. Input is validated to ensure the correct length and valid colors. The game loop handles feedback, so the human only focuses on making guesses.
 
-### 2. Codemaker Strategies (CM)
+### 2. Codemaker Strategies
 
 **Codemaker 0 Strategy**
 The codemaker selects a secret code at the start of the game. When evaluating a guess, it only counts how many colors are correctly placed (black pegs) and ignores correct colors in the wrong positions (white pegs). This is a partial evaluation, providing limited feedback to the codebreaker.
@@ -53,14 +53,11 @@ The code is logically structured into Python packages and modules for modularity
 ***
 
 ## ⚠️ Execution Instructions (Compatibility Notice)
-**the file structure should be "flattened" before running.**
-
+**For proper execution, all Python files should be in the same directory.**
 ### Deployment for Execution (Recommended Method)
 
 1.  **Flattening:** Move **ALL Python files (`.py`)** from all subdirectories (`codebreakers/`, `codemakers/`, `tests/`, etc.) directly into the **root directory** of the project.
 2.  **Execution:** Run the scripts from the root directory.
-
-This method ensures all modules are at the same level
 
 ### Launch Examples
 
