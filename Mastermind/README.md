@@ -68,4 +68,4 @@ Ensure you have the necessary dependencies installed (`numpy`, `matplotlib`, `tk
     python3 mastermind_gui.py
     ```
 
-* **Project Report:** The file `Rapport Projet Mastermind.pdf` contains the official project report requested by the school. It includes a detailed analysis of the results, strategy performance.
+**Project Report:** The file `Rapport Projet Mastermind.pdf` contains the official project report requested by the school. It includes a detailed analysis of the results, strategy performance.
