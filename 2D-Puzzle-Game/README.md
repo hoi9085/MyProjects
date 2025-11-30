@@ -3,7 +3,7 @@
 
 ## Overview
 
-This is a school project that implements a 2D puzzle game inspired by *It Takes Two*. The project includes character management, collision systems, graphical interfaces, and puzzle mechanics developed by a team of 5 students.
+This is a school project that implements a 2D puzzle game inspired by *It Takes Two*. The project includes character management, collision systems, graphical interfaces, and puzzle mechanics developed by a team of 8 students.
 
 ## Project Documentation
 
